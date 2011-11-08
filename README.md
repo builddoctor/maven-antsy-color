@@ -8,7 +8,8 @@ To Colorize Maven Output
 
 * put the file in a handy directory (like _~/scripts_)
 * add a link to it in your .bashrc (or other shell's initialization file):
-
-    [[ -s "${HOME}/scripts/mvn" ]] && source "${HOME}/scripts/mvn"
-    . ~/.bashrc # to re-read your bash configuration
+```bash
+[[ -s "${HOME}/scripts/mvn" ]] && source "${HOME}/scripts/mvn"
+. ~/.bashrc # to re-read your bash configuration
+  ```
 
