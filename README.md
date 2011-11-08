@@ -27,4 +27,4 @@ source \"${HOME}/scripts/mvn\"" >> ${HOME}/bashrc # add to RC file
 How do you spell 'colour'?
 --------------------------
 With a _u_ in it.  Until you realise that you're outnumbered by people who 
-use the (Georgian-era spelling)[http://en.wikipedia.org/wiki/American_and_British_English_spelling_differences#-our.2C_-or]
+use the [Georgian-era spelling](http://en.wikipedia.org/wiki/American_and_British_English_spelling_differences#-our.2C_-or)
