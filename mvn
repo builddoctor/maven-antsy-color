@@ -13,6 +13,7 @@ color_maven() {
     -e 's/\(BUILD SUCCESS.*\)/[1;37m\1[0m/g' \
     -e 's/\(SUCCESS.*\)/[1;37m\1[0m/g' 
     
+    return $PIPESTATUS
 }
 
 alias mvn=color_maven
