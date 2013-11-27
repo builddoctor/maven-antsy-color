@@ -8,7 +8,7 @@ color_maven() {
     -e 's/\(\[INFO\].*\)/[1;32m\1[0m/g' \
     -e 's/\(\[ERROR\].*\)/[1;31m\1[0m/g' \
     -e 's/\(\(BUILD \)\{0,1\}FAILURE.*\)/[1;31m\1[0m/g' \
-    -e 's/\(\(BUILD \)\{0,1\}SUCCESS.*\)/[1;37m\1[0m/g'
+    -e 's/\(\(BUILD \)\{0,1\}SUCCESS.*\)/[1;37m\1[0m/g' \
 
     return $PIPESTATUS
 }
