@@ -13,7 +13,7 @@ function color_maven() {
     local YELLOW="[1;33m"
     local WHITE="[1;37m"
     local NO_COLOUR="[0m"
-    maven $* | sed \
+    maven "$@" | sed \
         -e "s/Tests run: \([^,]*\), Failures: \([^,]*\), Errors: \([^,]*\), Skipped: \([^,]*\)/${LIGHT_GREEN}Tests run: \1$NO_COLOUR, Failures: $RED\2$NO_COLOUR, Errors: $YELLOW\3$NO_COLOUR, Skipped: $LIGHT_BLUE\4$NO_COLOUR/g" \
         -e "s/\(\[\{0,1\}WARN\(ING\)\{0,1\}\]\{0,1\}.*\)/$YELLOW\1$NO_COLOUR/g" \
         -e "s/\(\[ERROR\].*\)/$RED\1$NO_COLOUR/g" \
