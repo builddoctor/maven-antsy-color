@@ -19,8 +19,7 @@ to it in your .bashrc (or other shell's initialization file)
 
 ```bash
 mkdir -p ${HOME}/scripts # make a place for the script to live  
-cp mvn ${HOME}/scripts echo "[[ -s \"${HOME}/scripts/mvn\" ]] &&
-source \"${HOME}/scripts/mvn\"" >> ${HOME}/bashrc # add to RC file
+cp mvn ${HOME}/scripts echo "[[ -s \"${HOME}/scripts/mvn\" ]] && source \"${HOME}/scripts/mvn\"" >> ${HOME}/.bashrc # add to RC file
 . ${HOME}/bashrc # to re-read your bash configuration
 ```
 * alternatively, in recent Ubuntu Linux the default _~/.bashrc_ looks for alias additions in a separate file, that you can simply append to:
