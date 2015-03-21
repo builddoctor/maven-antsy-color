@@ -19,7 +19,8 @@ function color_maven() {
         -e "s/\(\[ERROR\].*\)/$RED\1$NO_COLOUR/g" \
         -e "s/\(\(BUILD \)\{0,1\}FAILURE.*\)/$RED\1$NO_COLOUR/g" \
         -e "s/\(\(BUILD \)\{0,1\}SUCCESS.*\)/$LIGHT_GREEN\1$NO_COLOUR/g" \
-        -e "s/\(\[INFO\].*\)/$LIGHT_GRAY\1$NO_COLOUR/g"
+        -e "s/\(\[INFO\] [^-].*\)/$LIGHT_GRAY\1$NO_COLOUR/g" \
+        -e "s/\(\[INFO\] -.*\)/$LIGHT_GREEN\1$NO_COLOUR/g"
     return $PIPESTATUS
 }
 
