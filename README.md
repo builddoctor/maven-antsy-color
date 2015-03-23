@@ -22,7 +22,7 @@ mkdir -p ${HOME}/scripts # make a place for the script to live
 cp mvn ${HOME}/scripts echo "[[ -s \"${HOME}/scripts/mvn\" ]] && source \"${HOME}/scripts/mvn\"" >> ${HOME}/.bashrc # add to RC file
 . ${HOME}/bashrc # to re-read your bash configuration
 ```
-* alternatively, in recent Ubuntu Linux the default _~/.bashrc_ looks for alias additions in a separate file, that you can simply append to:
+* alternatively, in recent Ubuntu Linux and OSX the default _~/.bashrc_ looks for alias additions in a separate file, that you can simply append to:
 
 ```bash
 curl -L https://raw.github.com/builddoctor/maven-antsy-color/master/mvn >> ~/.bash_aliases
